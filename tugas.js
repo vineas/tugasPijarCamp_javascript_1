@@ -37,3 +37,5 @@ const nilaimtk = 76;
 const nilaiBahasaindonesia = 78;
 const nilaiBahasainggris = 76;
 const nilaiIPA = 99;
+const jumlah = nilaimtk + nilaiBahasaindonesia + nilaiBahasainggris + nilaiIPA;
+const nilairata = jumlah / 4;
