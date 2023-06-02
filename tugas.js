@@ -79,3 +79,11 @@ let data = {
     phone: "1-770-736-8031 x56442",
     website: "hildegard.org"
 }
+
+let datasaya = {
+    ...data,
+    name: "Alvienas Yandika",
+    email: "alvienasyandika@gmail.com",
+    hobi: ["olahraga", "makan", "dengar musik"]
+}
+console.log(datasaya);
