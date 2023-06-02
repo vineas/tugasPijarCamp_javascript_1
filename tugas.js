@@ -31,3 +31,9 @@ const biodata = {
         }
     ]
 }
+
+// nomer 2
+const nilaimtk = 76;
+const nilaiBahasaindonesia = 78;
+const nilaiBahasainggris = 76;
+const nilaiIPA = 99;
