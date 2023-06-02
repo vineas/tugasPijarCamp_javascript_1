@@ -87,3 +87,8 @@ let datasaya = {
     hobi: ["olahraga", "makan", "dengar musik"]
 }
 console.log(datasaya);
+
+// nomer 4 b
+const {street, city} = data.address
+console.log(street);
+console.log(city);
