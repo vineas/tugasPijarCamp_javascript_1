@@ -39,3 +39,11 @@ const nilaiBahasainggris = 76;
 const nilaiIPA = 99;
 const jumlah = nilaimtk + nilaiBahasaindonesia + nilaiBahasainggris + nilaiIPA;
 const nilairata = jumlah / 4;
+const gradeUN =
+    nilairata >= 90 && nilairata <= 100 ? "A" :
+        nilairata >= 80 && nilairata <= 89 ? "B" :
+            nilairata >= 70 && nilairata <= 79 ? "C" :
+                nilairata >= 60 && nilairata <= 69 ? "D" :
+                    nilairata >= 0 && nilairata <= 59 ? "E" : "gagal memuat";
+console.log(nilairata);
+console.log(gradeUN);
