@@ -6,28 +6,28 @@ const biodata = {
     isMarried : false,
     schoolList :[
         {
-            name: "",
-            yearIn: "",
-            yearOut: "",
-            major: ""
+            name: "SDN Pasir Gombong 04",
+            yearIn: "2004",
+            yearOut: "2010",
+            major: " "
         },
         {
-            name: "",
-            yearIn: "",
-            yearOut: "",
-            major: ""
+            name: "SMPN 2 Cikarang Utara",
+            yearIn: "2010",
+            yearOut: "2013",
+            major: " "
         },
         {
-            name: "",
-            yearIn: "",
-            yearOut: "",
-            major: ""
+            name: "SMAN 2 Cikarang Utara",
+            yearIn: "2013",
+            yearOut: "2016",
+            major: "IPA"
         },
         {
-            name: "",
-            yearIn: "",
-            yearOut: "",
-            major: ""
+            name: "UIN SGD Bandung",
+            yearIn: "2016",
+            yearOut: "2022",
+            major: "Teknik Informatika"
         }
     ]
 }
