@@ -47,3 +47,19 @@ const gradeUN =
                     nilairata >= 0 && nilairata <= 59 ? "E" : "gagal memuat";
 console.log(nilairata);
 console.log(gradeUN);
+
+// nomer 3
+const printSegitiga = 5;
+if (typeof printSegitiga !== "number") {
+    console.log("Harus number")
+}
+else {
+    let hasil
+    for (let i = printSegitiga; i >= 1; i--) {
+        hasil = ""
+        for (let j = 1; j <= i; j++) {
+            hasil += i;
+        }
+        console.log(hasil)
+    }
+}
