@@ -58,7 +58,7 @@ else {
     for (let i = printSegitiga; i >= 1; i--) {
         hasil = ""
         for (let j = 1; j <= i; j++) {
-            hasil += i;
+            hasil += j;
         }
         console.log(hasil)
     }
