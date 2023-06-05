@@ -1,52 +1,71 @@
-// nomer 1
+// // nomer 1
 const biodata = {
-    name : "Alvienas Yandika",
-    age : 24,
-    hobbies :["olahraga", "makan", "game"],
-    isMarried : false,
-    schoolList :[
+    name: "Alvienas Yandika",
+    age: 24,
+    hobbies: ["olahraga", "makan", "game"],
+    isMarried: false,
+    schoolList: [
         {
             name: "SDN Pasir Gombong 04",
-            yearIn: "2004",
-            yearOut: "2010",
-            major: " "
+            yearIn: 2004,
+            yearOut: 2010,
+            major: null
         },
         {
             name: "SMPN 2 Cikarang Utara",
-            yearIn: "2010",
-            yearOut: "2013",
-            major: " "
+            yearIn: 2010,
+            yearOut: 2013,
+            major: null
         },
         {
             name: "SMAN 2 Cikarang Utara",
-            yearIn: "2013",
-            yearOut: "2016",
+            yearIn: 2013,
+            yearOut: 2016,
             major: "IPA"
         },
         {
             name: "UIN SGD Bandung",
-            yearIn: "2016",
-            yearOut: "2022",
+            yearIn: 2016,
+            yearOut: 2022,
             major: "Teknik Informatika"
         }
-    ]
+    ],
+    skills: [
+        {
+            skillName: "Programming",
+            level: "Beginner"
+        },
+        {
+            skillName: "Design",
+            level: "Advanced"
+        }
+    ],
+    interestCoding: true
+}
+console.log(biodata)
+
+// // nomer 2
+const grade = (nilaiMTK, nilaiBahasaindonesia, nilaiBahasainggris, nilaiIPA) => {
+    if (typeof nilaiMTK !== "number" || typeof nilaiBahasaindonesia !== "number" || typeof nilaiBahasainggris !== "number" || typeof nilaiIPA !== "number") {
+        console.log("Harus number")
+        return
+    }
+    else {
+        const jumlah = nilaiMTK + nilaiBahasaindonesia + nilaiBahasainggris + nilaiIPA;
+        const nilairata = jumlah / 4;
+        const gradeUN =
+            nilairata >= 90 && nilairata <= 100 ? "A" :
+                nilairata >= 80 && nilairata <= 89 ? "B" :
+                    nilairata >= 70 && nilairata <= 79 ? "C" :
+                        nilairata >= 60 && nilairata <= 69 ? "D" :
+                            nilairata >= 0 && nilairata <= 59 ? "E" : "gagal memuat";
+        console.log(`Rata-rata nilai: ${nilairata}`);
+        console.log(`Grade: ${gradeUN}`);
+
+    }
 }
 
-// nomer 2
-const nilaimtk = 76;
-const nilaiBahasaindonesia = 78;
-const nilaiBahasainggris = 76;
-const nilaiIPA = 99;
-const jumlah = nilaimtk + nilaiBahasaindonesia + nilaiBahasainggris + nilaiIPA;
-const nilairata = jumlah / 4;
-const gradeUN =
-    nilairata >= 90 && nilairata <= 100 ? "A" :
-        nilairata >= 80 && nilairata <= 89 ? "B" :
-            nilairata >= 70 && nilairata <= 79 ? "C" :
-                nilairata >= 60 && nilairata <= 69 ? "D" :
-                    nilairata >= 0 && nilairata <= 59 ? "E" : "gagal memuat";
-console.log(nilairata);
-console.log(gradeUN);
+grade(81, 80,71,90)
 
 // nomer 3
 const printSegitiga = 5;
@@ -80,6 +99,7 @@ let data = {
     website: "hildegard.org"
 }
 
+// spread operator
 let datasaya = {
     ...data,
     name: "Alvienas Yandika",
@@ -88,7 +108,7 @@ let datasaya = {
 }
 console.log(datasaya);
 
-// nomer 4 b
-const {street, city} = data.address
-console.log(street);
-console.log(city);
+// nomer 4 b destructuring
+const { street, city } = data.address
+console.log(`Street: ${street}`);
+console.log(`City: ${city}`);
